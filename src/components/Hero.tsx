@@ -10,13 +10,13 @@ const Hero = () => {
   };
 
   return (
-    <section className="min-h-screen flex items-center justify-center relative overflow-hidden">
-      {/* Background gradient */}
-      <div className="absolute inset-0 gradient-primary opacity-5"></div>
+    <section className="min-h-screen flex items-center justify-center relative overflow-hidden pt-16">
+      {/* Background gradient overlay */}
+      <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 opacity-80"></div>
       
       {/* Animated background elements */}
-      <div className="absolute top-20 left-10 w-72 h-72 bg-primary/10 rounded-full blur-3xl animate-pulse"></div>
-      <div className="absolute bottom-20 right-10 w-96 h-96 bg-secondary/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
+      <div className="absolute top-20 left-10 w-72 h-72 bg-primary/10 rounded-full blur-3xl animate-pulse lightning-glow"></div>
+      <div className="absolute bottom-20 right-10 w-96 h-96 bg-secondary/10 rounded-full blur-3xl animate-pulse delay-1000 lightning-glow"></div>
       
       <div className="container mx-auto px-6 text-center relative z-10">
         <div className="max-w-4xl mx-auto animate-fade-in">
@@ -26,7 +26,7 @@ const Hero = () => {
             & Webflow Expert
           </h1>
           
-          <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-2xl mx-auto leading-relaxed">
             I craft beautiful, functional websites that tell your story and drive results. 
             Specializing in Webflow development and modern web design.
           </p>
@@ -34,7 +34,7 @@ const Hero = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
             <Button 
               onClick={() => scrollToSection('portfolio')}
-              className="gradient-primary text-white px-8 py-3 text-lg hover:scale-105 transition-transform duration-300"
+              className="gradient-primary text-white px-8 py-3 text-lg hover:scale-105 transition-transform duration-300 lightning-glow"
             >
               View My Work
             </Button>
@@ -50,13 +50,13 @@ const Hero = () => {
           
           {/* Social Links */}
           <div className="flex justify-center space-x-6 mb-12">
-            <a href="#" className="text-muted-foreground hover:text-primary transition-colors duration-300 hover:scale-110 transform">
+            <a href="#" className="text-gray-400 hover:text-primary transition-colors duration-300 hover:scale-110 transform">
               <Github size={24} />
             </a>
-            <a href="#" className="text-muted-foreground hover:text-primary transition-colors duration-300 hover:scale-110 transform">
+            <a href="#" className="text-gray-400 hover:text-primary transition-colors duration-300 hover:scale-110 transform">
               <Linkedin size={24} />
             </a>
-            <a href="#" className="text-muted-foreground hover:text-primary transition-colors duration-300 hover:scale-110 transform">
+            <a href="#" className="text-gray-400 hover:text-primary transition-colors duration-300 hover:scale-110 transform">
               <Mail size={24} />
             </a>
           </div>
