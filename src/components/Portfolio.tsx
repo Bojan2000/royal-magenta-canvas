@@ -62,14 +62,14 @@ const Portfolio = () => {
   ];
 
   return (
-    <section id="portfolio" className="py-20 bg-white">
+    <section id="portfolio" className="py-20 bg-gray-100 text-gray-900">
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900">
               My <span className="text-gradient">Portfolio</span>
             </h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-xl text-gray-700 max-w-2xl mx-auto">
               Here are some of my recent projects that showcase my expertise in 
               Webflow development and web design.
             </p>
@@ -100,7 +100,7 @@ const Portfolio = () => {
                       <Button
                         size="sm"
                         variant="outline"
-                        className="bg-white/90 hover:bg-white hover:scale-105 transition-all duration-300"
+                        className="bg-white/90 hover:bg-white hover:scale-105 transition-all duration-300 text-gray-900 border-gray-300"
                         onClick={() => window.open(project.githubUrl, '_blank')}
                       >
                         <Github size={16} className="mr-1" />
@@ -111,10 +111,10 @@ const Portfolio = () => {
                 </div>
                 
                 <div className="p-6">
-                  <h3 className="text-xl font-semibold mb-2 group-hover:text-primary transition-colors duration-300">
+                  <h3 className="text-xl font-semibold mb-2 group-hover:text-primary transition-colors duration-300 text-gray-900">
                     {project.title}
                   </h3>
-                  <p className="text-muted-foreground mb-4 text-sm leading-relaxed">
+                  <p className="text-gray-600 mb-4 text-sm leading-relaxed">
                     {project.description}
                   </p>
                   <div className="flex flex-wrap gap-2">

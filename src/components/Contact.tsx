@@ -29,14 +29,14 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-20 bg-white">
+    <section id="contact" className="py-20 bg-gray-100 text-gray-900">
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900">
               Let's <span className="text-gradient">Connect</span>
             </h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-xl text-gray-700 max-w-2xl mx-auto">
               Ready to start your next project? I'd love to hear from you. 
               Let's create something amazing together.
             </p>
@@ -46,8 +46,8 @@ const Contact = () => {
             {/* Contact Information */}
             <div className="space-y-8">
               <div>
-                <h3 className="text-2xl font-semibold mb-6">Get in Touch</h3>
-                <p className="text-muted-foreground leading-relaxed mb-8">
+                <h3 className="text-2xl font-semibold mb-6 text-gray-900">Get in Touch</h3>
+                <p className="text-gray-600 leading-relaxed mb-8">
                   I'm always excited to work on new projects and collaborate with 
                   creative minds. Whether you need a complete website redesign or 
                   just want to discuss your ideas, feel free to reach out.
@@ -60,8 +60,8 @@ const Contact = () => {
                     <Mail className="text-white" size={20} />
                   </div>
                   <div>
-                    <h4 className="font-medium">Email</h4>
-                    <p className="text-muted-foreground">hello@webdesigner.com</p>
+                    <h4 className="font-medium text-gray-900">Email</h4>
+                    <p className="text-gray-600">hello@webdesigner.com</p>
                   </div>
                 </div>
 
@@ -70,8 +70,8 @@ const Contact = () => {
                     <Phone className="text-white" size={20} />
                   </div>
                   <div>
-                    <h4 className="font-medium">Phone</h4>
-                    <p className="text-muted-foreground">+1 (555) 123-4567</p>
+                    <h4 className="font-medium text-gray-900">Phone</h4>
+                    <p className="text-gray-600">+1 (555) 123-4567</p>
                   </div>
                 </div>
 
@@ -80,31 +80,31 @@ const Contact = () => {
                     <MapPin className="text-white" size={20} />
                   </div>
                   <div>
-                    <h4 className="font-medium">Location</h4>
-                    <p className="text-muted-foreground">San Francisco, CA</p>
+                    <h4 className="font-medium text-gray-900">Location</h4>
+                    <p className="text-gray-600">San Francisco, CA</p>
                   </div>
                 </div>
               </div>
 
               {/* Social Links */}
               <div className="pt-8">
-                <h4 className="font-medium mb-4">Follow Me</h4>
+                <h4 className="font-medium mb-4 text-gray-900">Follow Me</h4>
                 <div className="flex space-x-4">
                   <a 
                     href="#" 
-                    className="w-10 h-10 bg-gray-100 rounded-lg flex items-center justify-center hover:bg-primary hover:text-white transition-all duration-300 hover:scale-110"
+                    className="w-10 h-10 bg-gray-200 rounded-lg flex items-center justify-center hover:bg-primary hover:text-white transition-all duration-300 hover:scale-110 text-gray-700"
                   >
                     <Github size={20} />
                   </a>
                   <a 
                     href="#" 
-                    className="w-10 h-10 bg-gray-100 rounded-lg flex items-center justify-center hover:bg-primary hover:text-white transition-all duration-300 hover:scale-110"
+                    className="w-10 h-10 bg-gray-200 rounded-lg flex items-center justify-center hover:bg-primary hover:text-white transition-all duration-300 hover:scale-110 text-gray-700"
                   >
                     <Linkedin size={20} />
                   </a>
                   <a 
                     href="#" 
-                    className="w-10 h-10 bg-gray-100 rounded-lg flex items-center justify-center hover:bg-primary hover:text-white transition-all duration-300 hover:scale-110"
+                    className="w-10 h-10 bg-gray-200 rounded-lg flex items-center justify-center hover:bg-primary hover:text-white transition-all duration-300 hover:scale-110 text-gray-700"
                   >
                     <Twitter size={20} />
                   </a>
@@ -113,11 +113,11 @@ const Contact = () => {
             </div>
 
             {/* Contact Form */}
-            <div className="bg-gray-50 p-8 rounded-2xl">
+            <div className="bg-white p-8 rounded-2xl shadow-lg">
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid md:grid-cols-2 gap-4">
                   <div>
-                    <label htmlFor="name" className="block text-sm font-medium mb-2">
+                    <label htmlFor="name" className="block text-sm font-medium mb-2 text-gray-900">
                       Name *
                     </label>
                     <Input
@@ -127,13 +127,13 @@ const Contact = () => {
                       value={formData.name}
                       onChange={handleChange}
                       required
-                      className="w-full"
+                      className="w-full bg-gray-50 border-gray-300 text-gray-900"
                       placeholder="Your Name"
                     />
                   </div>
                   
                   <div>
-                    <label htmlFor="email" className="block text-sm font-medium mb-2">
+                    <label htmlFor="email" className="block text-sm font-medium mb-2 text-gray-900">
                       Email *
                     </label>
                     <Input
@@ -143,14 +143,14 @@ const Contact = () => {
                       value={formData.email}
                       onChange={handleChange}
                       required
-                      className="w-full"
+                      className="w-full bg-gray-50 border-gray-300 text-gray-900"
                       placeholder="your@email.com"
                     />
                   </div>
                 </div>
 
                 <div>
-                  <label htmlFor="subject" className="block text-sm font-medium mb-2">
+                  <label htmlFor="subject" className="block text-sm font-medium mb-2 text-gray-900">
                     Subject *
                   </label>
                   <Input
@@ -160,13 +160,13 @@ const Contact = () => {
                     value={formData.subject}
                     onChange={handleChange}
                     required
-                    className="w-full"
+                    className="w-full bg-gray-50 border-gray-300 text-gray-900"
                     placeholder="Project Subject"
                   />
                 </div>
 
                 <div>
-                  <label htmlFor="message" className="block text-sm font-medium mb-2">
+                  <label htmlFor="message" className="block text-sm font-medium mb-2 text-gray-900">
                     Message *
                   </label>
                   <Textarea
@@ -176,7 +176,7 @@ const Contact = () => {
                     onChange={handleChange}
                     required
                     rows={5}
-                    className="w-full resize-none"
+                    className="w-full resize-none bg-gray-50 border-gray-300 text-gray-900"
                     placeholder="Tell me about your project..."
                   />
                 </div>

@@ -43,14 +43,14 @@ const Services = () => {
   ];
 
   return (
-    <section id="services" className="py-20 bg-gray-50">
+    <section id="services" className="py-20 bg-gray-100 text-gray-900">
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900">
               My <span className="text-gradient">Services</span>
             </h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-xl text-gray-700 max-w-2xl mx-auto">
               I offer comprehensive web design and development services to help 
               your business succeed online.
             </p>
@@ -66,11 +66,11 @@ const Services = () => {
                   <service.icon className="text-white" size={32} />
                 </div>
                 
-                <h3 className="text-2xl font-semibold mb-4 group-hover:text-primary transition-colors duration-300">
+                <h3 className="text-2xl font-semibold mb-4 group-hover:text-primary transition-colors duration-300 text-gray-900">
                   {service.title}
                 </h3>
                 
-                <p className="text-muted-foreground mb-6 leading-relaxed">
+                <p className="text-gray-600 mb-6 leading-relaxed">
                   {service.description}
                 </p>
                 
@@ -78,7 +78,7 @@ const Services = () => {
                   {service.features.map((feature) => (
                     <li key={feature} className="flex items-center text-sm">
                       <div className="w-2 h-2 bg-primary rounded-full mr-3"></div>
-                      <span className="text-muted-foreground">{feature}</span>
+                      <span className="text-gray-600">{feature}</span>
                     </li>
                   ))}
                 </ul>
@@ -88,8 +88,8 @@ const Services = () => {
           
           <div className="text-center mt-16">
             <div className="bg-white p-8 rounded-2xl shadow-lg max-w-2xl mx-auto">
-              <h3 className="text-2xl font-semibold mb-4">Ready to Start Your Project?</h3>
-              <p className="text-muted-foreground mb-6">
+              <h3 className="text-2xl font-semibold mb-4 text-gray-900">Ready to Start Your Project?</h3>
+              <p className="text-gray-600 mb-6">
                 Let's discuss how I can help bring your vision to life with a 
                 beautiful, functional website.
               </p>
